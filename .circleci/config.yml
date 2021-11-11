@@ -1,0 +1,15 @@
+version: 2
+
+# Define the jobs we want to run for this project
+jobs:
+  build:
+    docker:
+      - image: cimg/<language>:<version TAG>
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+        working_directoy: ~/repo
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test 
