@@ -5,7 +5,7 @@ console.log("Arquivo carregado!")
 
 
 test('Subtração de a - b? ',()=>{
-    expect(multi(4,2)).toBe(2);
+    expect(sub(4,2)).toBe(2);
 });
 
 test('Multiplicação de a * b? ',()=>{
