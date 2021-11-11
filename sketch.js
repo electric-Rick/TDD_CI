@@ -9,4 +9,6 @@ function sum(a, b) {
  function sub(a,b){
      return b - a;
  }
-  module.exports = sum,multi,sub;
+  module.exports = sum;
+  module.exports = multi;
+  module.exports = sub;
